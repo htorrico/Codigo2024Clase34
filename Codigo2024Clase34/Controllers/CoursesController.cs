@@ -16,5 +16,11 @@ namespace Codigo2024Clase34.Controllers
             var service = new CourseService();
             return service.Get();
         }
+        [HttpPost]
+        public void Insert(Course course )
+        {
+            var service = new CourseService();
+            service.Insert(course);
+        }
     }
 }
